@@ -22,9 +22,12 @@ export default {
 				contactSocialColor: "var(--contactSocialColor)",
 			},
 			fontFamily: {
-				poppins: "var(--astro-font-poppins)",
-				satisfy: "var(--astro-font-satisfy)",
-				ubuntu: "var(--astro-font-ubuntu)",
+				inter: ["Inter", "sans-serif"],
+				mono: ["JetBrains Mono", "monospace"],
+				// Legacy aliases — all map to Inter
+				poppins: ["Inter", "sans-serif"],
+				satisfy: ["Inter", "sans-serif"],
+				ubuntu: ["Inter", "sans-serif"],
 			},
 			backgroundImage: {
 				'headerGradient': 'var(--headerGradient)',

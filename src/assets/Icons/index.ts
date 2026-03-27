@@ -30,9 +30,13 @@ export { default as EdgeStoreIcon } from "./edgestore.webp"
 
 // Programming-Stack
 export { default as PythonIcon } from "./python.svg"
+export { default as CIcon } from "./c.svg"
 export { default as CppIcon } from "./cpp.svg"
 export { default as JavaIcon } from "./java.svg"
 export { default as RIcon } from "./Rlogo.svg"
+
+// Backend extras
+export { default as SupabaseIcon } from "./supabase.svg"
 
 // Tools-Stack
 export { default as NpmIcon } from "./npm.svg"
@@ -42,5 +46,8 @@ export { default as ViteIcon } from "./vitejs.svg"
 export { default as SocketIoIcon } from "./socketio.svg"
 export { default as NetlifyIcon } from "./netlify.svg"
 export { default as VercelIcon } from "./vercel.svg"
+export { default as RenderIcon } from "./render.svg"
+export { default as RailwayIcon } from "./railway.svg"
 export { default as VsCodeIcon } from "./vscode.svg"
+export { default as IntelliJIcon } from "./intellij-idea.svg"
 export { default as FigmaIcon } from "./figma.svg"

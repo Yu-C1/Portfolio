@@ -7,6 +7,14 @@ a {
     cursor: pointer !important;
 }
 
+/* Important body text → green */
+strong,
+b,
+.text-important {
+    color: var(--textImportant);
+    font-weight: 600;
+}
+
 a,
 button,
 h1,

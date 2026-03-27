@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="16" fill="#27374D"/>
+  <!-- Terminal window -->
+  <rect x="10" y="18" width="80" height="64" rx="6" fill="#1A2B3C"/>
+  <!-- Title bar dots -->
+  <circle cx="24" cy="31" r="4" fill="#ef4444"/>
+  <circle cx="38" cy="31" r="4" fill="#eab308"/>
+  <circle cx="52" cy="31" r="4" fill="#22c55e"/>
+  <!-- Prompt arrow -->
+  <polygon points="18,49 26,44 26,54" fill="#38BDF8"/>
+  <!-- Code lines representing CLI output -->
+  <rect x="30" y="46" width="36" height="4" rx="2" fill="#526D82"/>
+  <rect x="30" y="55" width="28" height="4" rx="2" fill="#9DB2BF" opacity="0.7"/>
+  <rect x="30" y="64" width="42" height="4" rx="2" fill="#526D82" opacity="0.8"/>
+  <!-- Success checkmark badge -->
+  <circle cx="72" cy="69" r="10" fill="#27374D"/>
+  <polyline points="66,69 70,73 78,65" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

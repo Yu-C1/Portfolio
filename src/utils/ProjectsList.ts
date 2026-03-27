@@ -3,7 +3,7 @@ import {
 } from "../assets/Icons"
 
 import {
-    NextmartLogo, ArmsLogo, ArmsPhpLogo, ClimateLogo, CovidtraxLogo, DaysbeyondLogo, FilmstackLogo, PikturesLogo, SrinivasLogo, XReconLogo, YoatubeLogo, VortexaLogo
+    NextmartLogo, ArmsLogo, ArmsPhpLogo, ClimateLogo, CovidtraxLogo, DaysbeyondLogo, FilmstackLogo, PikturesLogo, SrinivasLogo, XReconLogo, YoatubeLogo, VortexaLogo, StructraLogo
 } from "../assets/Logos"
 
 import {
@@ -207,6 +207,44 @@ const FeatureList = {
 }
 
 export const ProjectsList: ProjectsListType = [
+    {
+        Name: "Structra",
+        ShortDesc: "AI-powered CLI tool that automatically diagnoses and fixes TypeScript dependency issues — broken imports, missing types, and version mismatches.",
+        Desc: "Structra is an open-source CLI tool published on npm that uses AI to analyze your TypeScript project and automatically resolve dependency issues. It detects broken imports, missing type declarations, and version mismatches across your dependency tree, then applies targeted fixes — saving hours of manual debugging. Designed for TypeScript developers who want fast, intelligent tooling that understands project structure and context.",
+        Logo: StructraLogo,
+        Shot: VortexaShots,
+        Mockup: VortexaMockup,
+        Theme: "#1c1c1c",
+        Status: "completed",
+        Link: "https://www.npmjs.com/package/structra-cli",
+        Source: "https://www.npmjs.com/package/structra-cli",
+        Tech: [TechInfo.TypeScript, TechInfo.Node, TechInfo.RESTAPI],
+        features: [
+            {
+                title: "AI-Powered Diagnosis",
+                description: "Uses AI to analyze your TypeScript project structure and intelligently identify broken imports, missing type declarations, and version conflicts."
+            },
+            {
+                title: "Automatic Dependency Fixes",
+                description: "Applies targeted fixes to resolve TypeScript dependency issues without requiring manual intervention or deep knowledge of the dependency tree."
+            },
+            {
+                title: "Version Mismatch Detection",
+                description: "Scans your package.json and tsconfig to identify incompatible package versions and suggests or applies compatible resolutions."
+            },
+            {
+                title: "Missing Type Declarations",
+                description: "Detects packages missing @types/* declarations and automatically installs the correct typing packages."
+            },
+            {
+                title: "npm Package",
+                description: "Published on npm as structra-cli — install globally and run in any TypeScript project with a single command."
+            },
+        ],
+        hideProject: false,
+        LogoSize: 55,
+        versions: []
+    },
     {
         Name: "ARMS v3",
         ShortDesc: "An educational platform designed to empower students with easy access to study materials. Students can browse & download PDFs files.",

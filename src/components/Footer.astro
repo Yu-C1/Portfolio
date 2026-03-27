@@ -1,13 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import {
-    DiscordIcon,
-    FaceBookIcon,
     GithubIcon,
-    InstagramIcon,
     LinkedinIcon,
     LogoIcon,
-    TwitterIcon,
 } from "../assets/SVGs";
 
 const currentYear = new Date().getFullYear();
@@ -39,49 +35,28 @@ const currentYear = new Date().getFullYear();
 
     <div class="w-full flex_center flex-col gap-2">
         <Image src={LogoIcon} alt="LogoIcon" width={80} height={80} />
-        <span>ChiragChrg | Portfolio</span>
+        <span>Yutao | Portfolio</span>
     </div>
 
-    <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10 lg:gap-20">
+    <div class="grid grid-cols-2 gap-x-20 gap-y-10 lg:gap-20">
         <a
-            href="https://www.facebook.com/ChiragChrg/"
+            href="https://www.linkedin.com/in/yutao-cai-676256289/"
             target="_blank"
             rel="noreferrer"
         >
-            <Image src={FaceBookIcon} alt="FaceBook" width={30} height={30} />
-        </a>
-        <a href="https://x.com/ChrgChirag" target="_blank" rel="noreferrer">
-            <Image src={TwitterIcon} alt="Twitter X" width={30} height={30} />
+            <Image src={LinkedinIcon} alt="LinkedIn" width={30} height={30} />
         </a>
         <a
-            href="https://www.instagram.com/chiragchrg/"
+            href="https://github.com/Yu-C1"
             target="_blank"
             rel="noreferrer"
         >
-            <Image src={InstagramIcon} alt="Instagram" width={30} height={30} />
-        </a>
-        <a
-            href="https://in.linkedin.com/in/chiragchrg"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <Image src={LinkedinIcon} alt="Discord" width={30} height={30} />
-        </a>
-        <a
-            href="https://github.com/ChiragChrg"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <Image src={GithubIcon} alt="Discord" width={30} height={30} />
-        </a>
-        <a
-            href="https://discord.gg/WmVQjMryDz"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <Image src={DiscordIcon} alt="Discord" width={30} height={30} />
+            <Image src={GithubIcon} alt="GitHub" width={30} height={30} />
         </a>
     </div>
 
-    <span>© Copyright 2023-{currentYear} ChiragChrg</span>
+    <span>© Copyright 2024-{currentYear} Yutao</span>
+    <span class="text-sm opacity-60">
+        Design based on <a href="https://github.com/ChiragChrg/ChiragChrg.github.io" target="_blank" rel="noreferrer" class="underline">portfolio by ChiragChrg</a> (MIT)
+    </span>
 </footer>

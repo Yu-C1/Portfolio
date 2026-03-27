@@ -1,7 +1,5 @@
 ---
 import { SEO } from "astro-seo";
-import { AstroFont } from "astro-font";
-import { join } from "node:path";
 import { Header, MobileHeader, Cursor } from "../components/UI";
 import { Footer } from "../components";
 ---
@@ -12,7 +10,7 @@ import { Footer } from "../components";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#000" />
+		<meta name="theme-color" content="#1c1c1c" />
 		<meta name="robots" content="index, follow" />
 		<meta
 			name="google-site-verification"
@@ -20,11 +18,19 @@ import { Footer } from "../components";
 		/>
 		<meta
 			name="keywords"
-			content="chiragchrg,chrgchirag, chirag, chrg, @ChrgChirag, portfolio, vortexa, ARMS, ARMS2.0, ARMS v3, Academic, Resource, Management, System, xrecon, @ChrgChirag, chiruchirag2001, chiragchrg.netlify.app, Fullstack Web Developer, My Personal Portfolio, ChiragChrg.github.io, I create Exciting Stuff on the Internet., epitome, aimit, epitome2k24,Epitome 2k24, Oriv.io, Oriv"
+			content="Yutao, Yutao Cai, software engineer, portfolio, structra, structra-cli, TypeScript, CLI tools, npm, developer tools, full stack"
 		/>
-		<meta name="author" content="ChiragChrg" />
-		<meta name="publisher" content="ChiragChrg" />
+		<meta name="author" content="Yutao Cai" />
+		<meta name="publisher" content="Yutao Cai" />
 		<link rel="manifest" href="/manifest.json" />
+
+		<!-- Google Fonts: Inter + JetBrains Mono -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+		/>
 
 		<!-- Preload CSS Styles -->
 		<link rel="preload stylesheet" href="/styles/global.css" as="style" />
@@ -32,25 +38,25 @@ import { Footer } from "../components";
 		<link rel="preload stylesheet" href="/styles/cursor.css" as="style" />
 
 		<SEO
-			title="ChiragChrg | My Personal Portfolio | Fullstack Web Developer"
-			description="Welcome to your gateway to the dynamic world of web development. Dive into a digital realm where my coding and design expertise creates exceptional UI/UX."
-			canonical="https://chiragchrg.netlify.app/"
+			title="Yutao | Software Engineer Portfolio"
+			description="Hi, I'm Yutao — a software engineer who loves exploring new tech and building interesting tools. Check out my projects including Structra, an AI-powered TypeScript CLI."
+			canonical="https://yutao.dev/"
 			openGraph={{
 				basic: {
-					title: "ChiragChrg | My Personal Portfolio | Fullstack Web Developer",
+					title: "Yutao | Software Engineer Portfolio",
 					type: "website",
-					image: "https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/Avatar.webp",
-					url: "https://chiragchrg.netlify.app/",
+					image: "https://raw.githubusercontent.com/Yu-C1/Yu-C1/main/Avatar.webp",
+					url: "https://yutao.dev/",
 				},
 			}}
 			twitter={{
-				title: "ChiragChrg | My Personal Portfolio | Fullstack Web Developer",
+				title: "Yutao | Software Engineer Portfolio",
 				description:
-					"Welcome to your gateway to the dynamic world of web development. Dive into a digital realm where my coding and design expertise creates exceptional UI/UX.",
+					"Hi, I'm Yutao — a software engineer who loves exploring new tech and building interesting tools.",
 				card: "summary",
-				site: "@ChrgChirag",
-				creator: "@ChrgChirag",
-				image: "https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/Avatar.webp",
+				site: "@yutaocai",
+				creator: "@yutaocai",
+				image: "https://raw.githubusercontent.com/Yu-C1/Yu-C1/main/Avatar.webp",
 			}}
 			extend={{
 				link: [
@@ -75,89 +81,31 @@ import { Footer } from "../components";
 			}}
 		/>
 
-		<AstroFont
-			config={[
-				{
-					name: "Poppins",
-					src: [
-						{
-							weight: "400",
-							style: "normal",
-							path: join(
-								process.cwd(),
-								"public",
-								"fonts",
-								"poppins-v20-latin-regular.woff2",
-							),
-						},
-					],
-					preload: true,
-					display: "swap",
-					fallback: "serif",
-					cssVariable: "astro-font-poppins",
-				},
-				{
-					name: "Satisfy",
-					src: [
-						{
-							weight: "400",
-							style: "normal",
-							path: join(
-								process.cwd(),
-								"public",
-								"fonts",
-								"satisfy-v17-latin-regular.woff2",
-							),
-						},
-					],
-					preload: true,
-					display: "swap",
-					fallback: "serif",
-					cssVariable: "astro-font-satisfy",
-				},
-				{
-					name: "Ubuntu",
-					src: [
-						{
-							weight: "700",
-							style: "normal",
-							path: join(
-								process.cwd(),
-								"public",
-								"fonts",
-								"ubuntu-v20-latin-700.woff2",
-							),
-						},
-					],
-					preload: true,
-					display: "swap",
-					fallback: "serif",
-					cssVariable: "astro-font-ubuntu",
-				},
-			]}
-		/>
 
 		<style is:global>
 			:root {
-				--base: #000000;
-				--baseLite: rgba(0, 0, 0, 0.85);
-				--text: #fff;
+				/* Base palette: dark charcoal */
+				--base: #1c1c1c;
+				--baseLite: rgba(28, 28, 28, 0.85);
+				--text: #FFFFFF;
+				--textImportant: #3BE2A2;
+				--surface: #2a2a2a;
+				--muted: #888888;
 
-				--pH: 264;
-				--pS: 100%;
-				--pL: 50%;
+				/* Primary: mint green #3BE2A2 → HSL(157, 74%, 56%) */
+				--pH: 157;
+				--pS: 74%;
+				--pL: 56%;
 
-				--sH: 315;
-				--sS: 100%;
-				--sL: 50%;
+				/* Secondary: deeper mint → HSL(162, 65%, 42%) */
+				--sH: 162;
+				--sS: 65%;
+				--sL: 42%;
 
-				--mH: 275;
-				--mS: 100%;
-				--mL: 47%;
-
-				/* --primary: 264, 100%, 50%;
-				--secondary: 315, 100%, 50%;
-				--mixColor: 275, 100%, 47%; */
+				/* Mix: between primary and secondary */
+				--mH: 159;
+				--mS: 70%;
+				--mL: 49%;
 
 				--primary: var(--pH), var(--pS), var(--pL);
 				--secondary: var(--sH), var(--sS), var(--sL);
@@ -168,119 +116,107 @@ import { Footer } from "../components";
 				--secondaryLite: hsla(var(--secondary), 0.6);
 				--secondaryLiteAlt: hsla(var(--secondary), 0.3);
 
-				--footer: hsl(264, 100%, 15%);
-				--footerSvgA: hsl(259, 75%, 10%);
-				--footerSvgB: hsl(256, 60%, 5%);
+				--footer: #141414;
+				--footerSvgA: #111111;
+				--footerSvgB: #0e0e0e;
 
+				/* Text highlights: mint green */
 				--gradient: linear-gradient(
 					to right,
-					hsl(var(--secondary)),
-					hsl(var(--primary)),
-					hsl(var(--primary)),
-					hsl(var(--secondary))
+					#2BC48A,
+					#3BE2A2,
+					#3BE2A2,
+					#2BC48A
 				);
 				--gradientLite: linear-gradient(
 					45deg,
-					var(--primaryLite),
-					hsl(var(--secondaryLite))
+					rgba(59, 226, 162, 0.6),
+					rgba(43, 196, 138, 0.6)
 				);
 
 				--headerGradient: linear-gradient(
 					180deg,
-					rgba(0, 0, 0, 0.6),
+					rgba(28, 28, 28, 0.8),
 					transparent
 				);
 				--cardGradient: linear-gradient(
 					45deg,
-					hsl(0, 0%, 1%),
+					#141414,
 					var(--primaryLite)
 				);
 				--cardGradientAlt: linear-gradient(
 					-135deg,
-					hsl(0, 0%, 5%),
+					#141414,
 					var(--primaryLiteAlt)
 				);
 				--miscCardGradient: linear-gradient(
 					-45deg,
-					hsl(0, 0%, 1%),
+					#141414,
 					var(--primaryLiteAlt)
 				);
 				--overlayGradient: radial-gradient(
 					farthest-corner at 100% 0%,
-					hsla(0, 0%, 5%, 0.5),
+					hsla(157, 30%, 5%, 0.5),
 					transparent
 				);
 				--LinkBtnGradient: linear-gradient(
 					-135deg,
-					hsla(0, 0%, 9%, 0.8),
-					hsla(0, 0%, 10%, 0.6)
+					rgba(20, 20, 20, 0.8),
+					rgba(28, 28, 28, 0.6)
 				);
 				--SkillGradient: linear-gradient(
 					-135deg,
-					hsla(276, 50%, 10%, 0.8),
-					hsla(296, 50%, 10%, 0.5)
+					hsla(157, 40%, 8%, 0.8),
+					hsla(162, 40%, 8%, 0.5)
 				);
 				--SkillGradientAlt: linear-gradient(
 					-135deg,
-					hsla(276, 50%, 10%, 0.4),
-					hsla(296, 50%, 10%, 0.25)
+					hsla(157, 40%, 8%, 0.4),
+					hsla(162, 40%, 8%, 0.25)
 				);
 				--orbitGradient: conic-gradient(
 					transparent,
 					transparent,
 					hsl(var(--primary)),
 					hsl(var(--secondary)),
-					#fff
+					#FFFFFF
 				);
 				--orbitGradientAlt: conic-gradient(
-					#fff,
+					#FFFFFF,
 					hsl(var(--primary)),
 					hsl(var(--secondary)),
 					transparent,
 					transparent
 				);
 
-				--orbitDotColor: #fff;
-				--heroSocialColoe: #fff;
-				--contactSocialColor: hsla(0, 0%, 100%, 0.4);
+				--orbitDotColor: #3BE2A2;
+				--heroSocialColor: #FFFFFF;
+				--contactSocialColor: hsla(157, 40%, 50%, 0.4);
 
-				--cursorColor: hsla(0, 0%, 100%, 0.6);
-				--cursorColorAlt: hsla(0, 0%, 100%, 0.8);
-				--dotColor: #fff;
+				--cursorColor: hsla(157, 74%, 56%, 0.6);
+				--cursorColorAlt: hsla(157, 74%, 56%, 0.8);
+				--dotColor: #3BE2A2;
 			}
 
 			html.light {
-				--base: #fff;
-				--baseLite: rgba(255, 255, 255, 0.85);
-				--text: #000;
+				--base: #BBE1FA;
+				--baseLite: rgba(187, 225, 250, 0.85);
+				--text: #1B262C;
+				--textImportant: #16A34A;
+				--surface: #3282B8;
+				--muted: #0F4C75;
 
-				--pH: 264;
-				--pS: 100%;
-				--pL: 50%;
+				--pH: 204;
+				--pS: 57%;
+				--pL: 36%;
 
-				--sH: 315;
-				--sS: 100%;
-				--sL: 50%;
+				--sH: 204;
+				--sS: 77%;
+				--sL: 20%;
 
-				--mH: 275;
-				--mS: 100%;
-				--mL: 47%;
-
-				/* --pH: 240;
-				--pS: 60%;
-				--pL: 35%;
-
-				--sH: 190;
-				--sS: 80%;
-				--sL: 50%;
-
-				--mH: 200;
-				--mS: 80%;
-				--mL: 60%; */
-
-				/* --primary: 264, 100%, 50%;
-				--secondary: 315, 100%, 50%;
-				--mixColor: 275, 100%, 47%; */
+				--mH: 204;
+				--mS: 67%;
+				--mL: 28%;
 
 				--primary: var(--pH), var(--pS), var(--pL);
 				--secondary: var(--sH), var(--sS), var(--sL);
@@ -291,46 +227,46 @@ import { Footer } from "../components";
 				--secondaryLite: hsla(var(--secondary), 0.6);
 				--secondaryLiteAlt: hsla(var(--secondary), 0.3);
 
-				--footer: hsl(var(--pH), var(--pS), 75%);
-				--footerSvgA: hsl(var(--pH), var(--pS), 85%);
-				--footerSvgB: hsl(var(--pH), var(--pS), 90%);
+				--footer: #A8D4F5;
+				--footerSvgA: #C4E2F8;
+				--footerSvgB: #D8EDFC;
 
 				--gradient: linear-gradient(
 					to right,
-					hsl(var(--secondary)),
-					hsl(var(--primary)),
-					hsl(var(--primary)),
-					hsl(var(--secondary))
+					#15803D,
+					#22C55E,
+					#22C55E,
+					#15803D
 				);
 				--gradientLite: linear-gradient(
 					45deg,
-					var(--primaryLite),
-					hsl(var(--secondaryLite))
+					rgba(34, 197, 94, 0.6),
+					rgba(21, 128, 61, 0.6)
 				);
 
 				--headerGradient: linear-gradient(
 					180deg,
-					rgba(255, 255, 255, 0.6),
+					rgba(221, 230, 237, 0.8),
 					transparent
 				);
 				--cardGradient: linear-gradient(
 					45deg,
-					hsl(var(--secondary), 0.1),
+					hsla(var(--secondary), 0.1),
 					var(--primaryLiteAlt)
 				);
 				--cardGradientAlt: linear-gradient(
 					-135deg,
 					var(--primaryLiteAlt),
-					hsl(0, 0%, 100%)
+					rgba(221, 230, 237, 1)
 				);
 				--miscCardGradient: linear-gradient(
 					-45deg,
 					var(--primaryLiteAlt),
-					hsl(0, 0%, 100%)
+					rgba(221, 230, 237, 1)
 				);
 				--overlayGradient: radial-gradient(
 					farthest-corner at 100% 0%,
-					hsla(0, 0%, 100%, 0.5),
+					hsla(207, 30%, 80%, 0.5),
 					transparent
 				);
 				--LinkBtnGradient: linear-gradient(
@@ -362,8 +298,8 @@ import { Footer } from "../components";
 				);
 
 				--orbitDotColor: hsl(var(--mixColor));
-				--heroSocialColor: hsl(0, 0%, 20%);
-				--contactSocialColor: hsla(0, 0%, 20%, 0.4);
+				--heroSocialColor: hsl(207, 40%, 20%);
+				--contactSocialColor: hsla(204, 40%, 20%, 0.4);
 
 				--cursorColor: hsla(var(--primary), 0.6);
 				--cursorColorAlt: hsla(var(--primary), 0.6);
@@ -377,7 +313,11 @@ import { Footer } from "../components";
 			}
 
 			html {
-				font-family: Poppins !important;
+				font-family: 'JetBrains Mono', monospace !important;
+			}
+
+			code, pre {
+				font-family: 'JetBrains Mono', monospace !important;
 			}
 
 			body {
@@ -502,7 +442,7 @@ import { Footer } from "../components";
 
 			/* Page Title Style */
 			.Title-Tag {
-				font-family: Ubuntu;
+				font-family: 'Inter', sans-serif;
 			}
 
 			.Title-Tag span,
