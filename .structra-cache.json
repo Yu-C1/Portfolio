@@ -1,0 +1,25 @@
+{
+  "fingerprint": "d866c92b3d1b92a52ef5c3a522684c0af54ef90d082d77b84f86eb355fed3e2b",
+  "scannedPath": "C:\\Users\\toby2\\portfolio\\Portfolio",
+  "cachedAt": "2026-03-27T08:47:24.551Z",
+  "result": {
+    "circularDeps": [],
+    "godFiles": [],
+    "highOutDegreeFiles": [],
+    "misplacedFiles": [
+      {
+        "currentPath": ".claude/worktrees/flamboyant-zhukovsky/astro.config.mjs",
+        "suggestedPath": "@astrojs/astro.config.mjs",
+        "reason": "2/3 imports come from @astrojs/"
+      },
+      {
+        "currentPath": "astro.config.mjs",
+        "suggestedPath": "@astrojs/astro.config.mjs",
+        "reason": "2/3 imports come from @astrojs/"
+      }
+    ],
+    "layerViolations": [],
+    "totalFiles": 11,
+    "totalImports": 6
+  }
+}

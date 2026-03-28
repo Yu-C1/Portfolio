@@ -1,0 +1,14 @@
+{
+  "fingerprint": "5d84df86da39d5e7028f710a0fbfe2c2eec1187cc2fce7ceed76b211dcd3354b",
+  "scannedPath": "C:\\Users\\toby2\\portfolio\\Portfolio\\src",
+  "cachedAt": "2026-03-27T08:46:49.250Z",
+  "result": {
+    "circularDeps": [],
+    "godFiles": [],
+    "highOutDegreeFiles": [],
+    "misplacedFiles": [],
+    "layerViolations": [],
+    "totalFiles": 0,
+    "totalImports": 0
+  }
+}
