@@ -5,22 +5,14 @@ import { Download } from "lucide-preact";
 
 <header id="header" class="hidden lg:block sticky top-0 z-50">
     <div
-        class="flex justify-between items-center w-full px-6 py-2 bg-headerGradient backdrop-blur-[2px]"
+        class="flex justify-end items-center w-full px-6 py-2 bg-headerGradient backdrop-blur-[2px]"
     >
-        <a href="#home" class="Fade_Down font-satisfy font-bold text-[2em]">
-            <span class="gradientText w-fit">Portfolio.</span>
-        </a>
-
-        <nav class="Header_Nav flex gap-6">
+        <nav class="Header_Nav flex gap-6 lg:gap-8 xl:gap-10 text-sm lg:text-lg xl:text-xl tracking-widest">
             <a class="Fade_Down" href="#about">ABOUT</a>
             <a class="Fade_Down" href="#skills">SKILLS</a>
             <a class="Fade_Down" href="#projects">PROJECTS</a>
             <a class="Fade_Down" href="#contact">CONTACT</a>
         </nav>
-
-        <div class="flex_center gap-4">
-            <!-- Resume button hidden — no resume link yet -->
-        </div>
     </div>
 </header>
 

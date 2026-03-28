@@ -3,7 +3,7 @@ import {
 } from "../assets/Icons"
 
 import {
-    NextmartLogo, ArmsLogo, ArmsPhpLogo, ClimateLogo, CovidtraxLogo, DaysbeyondLogo, FilmstackLogo, PikturesLogo, SrinivasLogo, XReconLogo, YoatubeLogo, VortexaLogo, StructraLogo
+    NextmartLogo, ArmsLogo, ArmsPhpLogo, ClimateLogo, CovidtraxLogo, DaysbeyondLogo, FilmstackLogo, PikturesLogo, SrinivasLogo, XReconLogo, YoatubeLogo, VortexaLogo, StructraLogo, LockVisualizerLogo
 } from "../assets/Logos"
 
 import {
@@ -246,6 +246,44 @@ export const ProjectsList: ProjectsListType = [
         versions: []
     },
     {
+        Name: "Lock Visualizer",
+        ShortDesc: "An interactive web-based tool for building, visualizing, and analyzing concurrent thread programs — making locks, data races, and deadlocks intuitive.",
+        Desc: "Lock Visualizer is an interactive concurrency education tool that lets users build concurrent programs through drag-and-drop, then statically analyzes them for data races, deadlocks, and invalid lock usage. It renders a step-by-step execution timeline showing lock acquisitions, reads, writes, and releases — helping CS students and instructors understand thread synchronization visually. Built with React and TypeScript, deployed on GitHub Pages.",
+        Logo: LockVisualizerLogo,
+        Shot: VortexaShots,
+        Mockup: VortexaMockup,
+        Theme: "#101010",
+        Status: "completed",
+        Link: "https://yu-c1.github.io/cse332-lock-visualizer/",
+        Source: "https://github.com/Yu-C1/cse332-lock-visualizer",
+        Tech: [TechInfo.React, TechInfo.TypeScript],
+        features: [
+            {
+                title: "Drag-and-Drop Thread Construction",
+                description: "Build concurrent programs visually by dragging lock(), unlock(), read(), and write() instructions into Thread 1 and Thread 2."
+            },
+            {
+                title: "Static Concurrency Analysis",
+                description: "Before execution, the program is statically validated to detect data races, deadlock potential, and invalid lock usage — with clear explanations and suggested fixes."
+            },
+            {
+                title: "Execution Timeline Visualization",
+                description: "Renders a step-by-step timeline of lock acquisitions, reads, writes, and releases to help users reason about interleavings and shared state."
+            },
+            {
+                title: "Deadlock Detection",
+                description: "Identifies circular wait conditions and lock ordering issues that could cause threads to stall indefinitely."
+            },
+            {
+                title: "Educational Focus",
+                description: "Designed for CS students and instructors as a visual teaching aid for understanding synchronization bugs without needing to run real threads."
+            },
+        ],
+        hideProject: false,
+        LogoSize: 55,
+        versions: []
+    },
+    {
         Name: "ARMS v3",
         ShortDesc: "An educational platform designed to empower students with easy access to study materials. Students can browse & download PDFs files.",
         Desc: "ARMS (Academic Resource Management System) is an all-inclusive educational platform designed to empower students with easy access to study materials for their respective subjects. By logging in anonymously, students can conveniently browse and download PDF documents uploaded by authorized faculties. With a centralized approach, ARMS ensures that students can effortlessly find and obtain the necessary resources they need for their academic pursuits. It's a user-friendly solution that streamlines the process of resource management, providing a seamless experience for both students and faculties alike.",
@@ -281,7 +319,7 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive,
             FeatureList.SEO
         ],
-        hideProject: false,
+        hideProject: true,
         LogoSize: 50,
         versions: [
             { title: "ARMS v3", version: "3" },
@@ -333,7 +371,7 @@ export const ProjectsList: ProjectsListType = [
                 description: "Get a glimpse of the weather ahead with a concise 2-day forecast. Stay prepared for upcoming changes in weather conditions."
             }
         ],
-        hideProject: false,
+        hideProject: true,
         LogoSize: 50,
         versions: [
             { title: "Vortexa", version: "2" },
@@ -429,7 +467,7 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive,
             FeatureList.SEO,
         ],
-        hideProject: false,
+        hideProject: true,
         LogoSize: 55,
         versions: []
     },
@@ -457,7 +495,7 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive,
             FeatureList.SEO,
         ],
-        hideProject: false,
+        hideProject: true,
         LogoSize: 55,
         versions: []
     },
@@ -502,7 +540,7 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive,
             FeatureList.SEO,
         ],
-        hideProject: false,
+        hideProject: true,
         LogoSize: 55,
         versions: []
     },
@@ -558,7 +596,7 @@ export const ProjectsList: ProjectsListType = [
             FeatureList.Responsive,
             FeatureList.SEO,
         ],
-        hideProject: false,
+        hideProject: true,
         LogoSize: 55,
         versions: []
     },

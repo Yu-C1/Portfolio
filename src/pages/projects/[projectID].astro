@@ -1,19 +1,8 @@
 ---
 export function getStaticPaths() {
     return [
-        { params: { projectID: "arms-v3" } },
-        { params: { projectID: "vortexa" } },
-        { params: { projectID: "next-mart" } },
-        { params: { projectID: "arms-v2" } },
-        { params: { projectID: "xrecon" } },
-        { params: { projectID: "yoatube" } },
-        { params: { projectID: "srinivas-exam-manager" } },
-        { params: { projectID: "piktures" } },
-        { params: { projectID: "days-beyond" } },
-        { params: { projectID: "arms-v1" } },
-        { params: { projectID: "film-stack" } },
-        { params: { projectID: "covidtrax" } },
-        { params: { projectID: "climate" } },
+        { params: { projectID: "structra" } },
+        { params: { projectID: "lock-visualizer" } },
     ];
 }
 const { projectID } = Astro.params;
@@ -32,7 +21,7 @@ const [project] = ProjectsList.filter(
 ---
 
 <ProjectLayout
-    title=`${project.Name} | ChiragChrg`
+    title=`${project.Name} | Yutao`
     description={project.ShortDesc}
 >
     <div class="Fade_In flex_center absolute inset-0 w-full h-full z-[-1]">

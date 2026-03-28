@@ -5,7 +5,14 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\toby2\\\\portfolio\\\\Portfolio\\\\.claude\\\\worktrees\\\\flamboyant-zhukovsky\\\\node_modules\\\\.astro\" -ErrorAction SilentlyContinue)",
       "Bash(Remove-Item -Recurse -Force \"C:\\\\Users\\\\toby2\\\\portfolio\\\\Portfolio\\\\.claude\\\\worktrees\\\\flamboyant-zhukovsky\\\\.astro\" -ErrorAction SilentlyContinue)",
-      "Bash(Write-Host \"Cache cleared\")"
+      "Bash(Write-Host \"Cache cleared\")",
+      "Bash(cat commitlint.config.*)",
+      "Read(//c/Users/toby2/portfolio/Portfolio/.claude/worktrees/**)",
+      "Read(//c/Users/toby2/portfolio/Portfolio/.claude/**)",
+      "Read(//c/Users/toby2/portfolio/Portfolio/**)",
+      "Read(//c/Users/toby2/.bun/bin/**)",
+      "Read(//c/Users/toby2/AppData/Local/bun/**)",
+      "Bash(python3 -c \":*)"
     ]
   }
 }
