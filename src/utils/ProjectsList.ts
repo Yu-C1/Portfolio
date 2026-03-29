@@ -240,6 +240,10 @@ export const ProjectsList: ProjectsListType = [
                 title: "npm Package",
                 description: "Published on npm as structra-cli — install globally and run in any TypeScript project with a single command."
             },
+            {
+                title: "Pricing",
+                description: "Free tier includes 1 fix. Pro plan at $15/month unlocks 300 fixes/month. Upgrade at https://buy.stripe.com/aFaeVd8eE1510gJ5Hr1B600"
+            },
         ],
         hideProject: false,
         LogoSize: 55,
